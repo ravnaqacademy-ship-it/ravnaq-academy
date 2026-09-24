@@ -85,9 +85,12 @@ Token sizdan boshqa odamga tushib qolgan deb gumon qilsangiz, @BotFather da `/re
 
 ## Internetga joylash
 
-Sayt GitHub Pages orqali jonli: **https://ravnaqacademy-ship-it.github.io/ravnaq-academy/**
+Sayt ikki manzilda jonli:
 
-Repozitoriy: https://github.com/ravnaqacademy-ship-it/ravnaq-academy. `main` branchga har bir push qilinganda sayt 1–2 daqiqada avtomatik yangilanadi.
+- **Railway (asosiy):** https://ravnaq-academy-production.up.railway.app/
+- GitHub Pages (zaxira): https://ravnaqacademy-ship-it.github.io/ravnaq-academy/
+
+Repozitoriy: https://github.com/ravnaqacademy-ship-it/ravnaq-academy. `main` branchga har bir push qilinganda ikkala sayt ham 1–2 daqiqada avtomatik yangilanadi. Railway statik saytni Caddy serveri orqali beradi (`railway.json` da sozlangan), maxsus domen ulash uchun Railway → Settings → Networking → Custom Domain.
 
 Boshqa bepul xostinglar ham ishlaydi:
 
