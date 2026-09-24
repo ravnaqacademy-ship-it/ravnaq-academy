@@ -120,7 +120,7 @@ h2.title { font-size: clamp(28px, 4vw, 44px); font-weight: 800; }
 
 /* Lottie konteyner */
 .anim { position: relative; width: 100%; height: 100%; display: grid; place-items: center; }
-.anim svg { width: 100% !important; height: 100% !important; transform: translateZ(0); backface-visibility: hidden; }
+.anim svg { width: 100% !important; height: 100% !important; }
 .anim.is-fallback { font-family: var(--font-head); font-weight: 800; font-size: 44px; color: var(--brand-2); }
 
 /* ---------- Header ---------- */
@@ -178,7 +178,7 @@ h2.title { font-size: clamp(28px, 4vw, 44px); font-weight: 800; }
 @keyframes spin { to { transform: rotate(360deg); } }
 .orb__glow { position: absolute; inset: 10%; border-radius: 50%; background: radial-gradient(circle, rgba(42,127,255,.5) 0%, rgba(0,198,255,.12) 50%, transparent 70%); animation: breathe 5s ease-in-out infinite; will-change: opacity; }
 @keyframes breathe { 0%,100% { opacity: .75;} 50% { opacity: 1;} }
-.orb__logo { position: relative; display: block; width: 62%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 50%; will-change: transform; box-shadow: 0 0 0 6px rgba(4,12,31,.9), 0 0 0 8px rgba(42,127,255,.45), 0 30px 80px -20px rgba(0,198,255,.7); }
+.orb__logo { position: relative; display: block; width: 62%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 50%; box-shadow: 0 0 0 6px rgba(4,12,31,.9), 0 0 0 8px rgba(42,127,255,.45), 0 30px 80px -20px rgba(0,198,255,.7); }
 .chip {
   position: absolute; width: 92px; height: 92px; padding: 14px; border-radius: 26px;
   background: rgba(12, 27, 62, 0.94); border: 1px solid var(--border-strong);

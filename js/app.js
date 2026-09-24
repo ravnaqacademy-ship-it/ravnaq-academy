@@ -67,7 +67,7 @@
           loop: el.dataset.loop !== "false",
           autoplay: !reduceMotion,
           animationData: data,
-          rendererSettings: { preserveAspectRatio: "xMidYMid meet", progressiveLoad: true, hideOnTransparent: true }
+          rendererSettings: { preserveAspectRatio: "xMidYMid meet", progressiveLoad: false, hideOnTransparent: true }
         });
         // Silliq ijro: faqat butun kadrlar chiziladi (60fps emoji uchun yetarli), CPU yuki kamayadi
         inst.setSubframe(false);
