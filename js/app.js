@@ -67,8 +67,10 @@
           loop: el.dataset.loop !== "false",
           autoplay: !reduceMotion,
           animationData: data,
-          rendererSettings: { preserveAspectRatio: "xMidYMid meet", progressiveLoad: true }
+          rendererSettings: { preserveAspectRatio: "xMidYMid meet", progressiveLoad: true, hideOnTransparent: true }
         });
+        // Silliq ijro: faqat butun kadrlar chiziladi (60fps emoji uchun yetarli), CPU yuki kamayadi
+        inst.setSubframe(false);
         if (reduceMotion) inst.addEventListener("DOMLoaded", () => inst.goToAndStop(Math.floor(inst.totalFrames / 2), true));
         instances.set(el, inst);
         el.classList.add("is-ready");
@@ -619,6 +621,8 @@
   /* Ishga tushirish                                                     */
   /* ------------------------------------------------------------------ */
   function init() {
+    // Ko'p animatsiya bir vaqtda ishlaganda silliqlik uchun sifat/yuk balansi
+    if (window.lottie && window.lottie.setQuality) window.lottie.setQuality("medium");
     $$("[data-tg]").forEach((a) => { a.href = TG_URL; a.target = "_blank"; a.rel = "noopener"; });
     $$("[data-tg-handle]").forEach((el) => { el.textContent = "@" + TG_URL.split("/").pop(); });
     $$("[data-tg-admin]").forEach((a) => { a.href = ADMIN_URL; a.target = "_blank"; a.rel = "noopener"; });
