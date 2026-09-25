@@ -59,6 +59,23 @@ window.RAVNAQ_DATA = {
       ]
     },
     {
+      id: "rus-tili",
+      name: "Rus tili",
+      short: "2–9-sinf o'quvchilari uchun",
+      anim: "speaking",
+      color: "#ff5d7a",
+      desc: "Alifbo, so'zlar, sodda gaplar va so'zlashuv. Rus tilini noldan qiziqarli o'rganish va milliy sertifikatga tayyorlov.",
+      tags: ["2–9-sinf", "Alifbo", "So'z boyligi", "So'zlashuv"],
+      quiz: [
+        { q: "\"Привет\" so'zi o'zbekcha nima?", a: ["Xayr", "Salom", "Rahmat", "Kechirasiz"], c: 1, e: "Привет — salom." },
+        { q: "\"Спасибо\" so'zining tarjimasi?", a: ["Rahmat", "Iltimos", "Ha", "Yo'q"], c: 0, e: "Спасибо — rahmat." },
+        { q: "\"Мама\" so'zi o'zbekcha nima?", a: ["Ota", "Aka", "Ona", "Opa"], c: 2, e: "Мама — ona, папа — ota." },
+        { q: "Один, два, ___ . Keyingi son qaysi?", a: ["пять", "три", "десять", "четыре"], c: 1, e: "Один (1), два (2), три (3)." },
+        { q: "\"Кошка\" qaysi hayvon?", a: ["It", "Mushuk", "Ot", "Sigir"], c: 1, e: "Кошка — mushuk, собака — it." },
+        { q: "Rus alifbosida nechta harf bor?", a: ["26", "29", "33", "40"], c: 2, e: "Rus alifbosida 33 ta harf bor." }
+      ]
+    },
+    {
       id: "ingliz-tili",
       name: "Ingliz tili",
       short: "2–9-sinf o'quvchilari uchun",

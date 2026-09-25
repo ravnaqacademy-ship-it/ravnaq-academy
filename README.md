@@ -4,7 +4,7 @@ Ravnaq Academy uchun bir sahifali (landing) sayt. Backend talab qilmaydi: oddiy 
 
 ## Nimalar bor
 
-- **8 ta fan**: Ona tili, Matematika, Kimyo, Ingliz tili, IELTS, Sun'iy intellekt, Data analitika, Huquq.
+- **9 ta fan**: Ona tili, Matematika, Kimyo, Rus tili, Ingliz tili, IELTS, Sun'iy intellekt, Data analitika, Huquq.
 - **Har bir fan uchun so'rovnoma (test)** — 6 savol, darhol to'g'ri javob va izoh, oxirida daraja (Boshlang'ich / O'rta / Yuqori) va medal animatsiyasi.
 - **Har bir fan uchun animatsiya** — Google Noto Animated Emoji (CC BY 4.0) va LottieFiles (Lottie Simple License) manbalaridan olingan, `assets/anim/` papkasiga saqlangan. Sayt internetga bog'liq emas.
 - **Ariza formasi** — ism, telefon (+998 niqobi), qiziqqan fan. Agar mijoz test topshirgan bo'lsa, natija ariza bilan birga yuboriladi.
