@@ -1,6 +1,8 @@
 /* ==========================================================================
    RAVNAQ ACADEMY — FANLAR VA SO'ROVNOMALAR (TESTLAR)
-   Har bir fan: id, nom, qisqa tavsif, animatsiya kaliti, rang va 6 ta savol.
+   Savollar sodda tuzilgan:
+     • Ona tili, Matematika, Kimyo, Ingliz tili, Huquq — 2–9-sinf o'quvchilari uchun
+     • IELTS, Sun'iy intellekt, Data analitika — boshlang'ich (beginner) daraja uchun
    Savol formati: { q: "savol", a: ["A","B","C","D"], c: to'g'ri javob indeksi (0-3), e: "izoh" }
    ========================================================================== */
 window.RAVNAQ_DATA = {
@@ -8,144 +10,144 @@ window.RAVNAQ_DATA = {
     {
       id: "ona-tili",
       name: "Ona tili",
-      short: "Imlo, grammatika va nutq madaniyati",
+      short: "2–9-sinf o'quvchilari uchun",
       anim: "books",
       color: "#ff8a5b",
-      desc: "Imlo qoidalari, grammatika, insho yozish va ravon nutq. DTM va milliy sertifikat imtihonlariga tizimli tayyorlov.",
-      tags: ["Imlo", "Grammatika", "Insho", "Milliy sertifikat"],
+      desc: "Harflar, bo'g'inlar, imlo va sodda grammatika. Maktab o'quvchilari uchun qiziqarli va tushunarli darslar.",
+      tags: ["2–9-sinf", "Imlo", "Grammatika", "O'qish"],
       quiz: [
-        { q: "Qaysi qatordagi so'z to'g'ri yozilgan?", a: ["Ko'ngil", "Kongil", "Ko'ngul", "Kungil"], c: 0, e: "To'g'ri imlo: ko'ngil." },
-        { q: "\"Kitob\" so'zi qaysi so'z turkumiga kiradi?", a: ["Ot", "Sifat", "Fe'l", "Ravish"], c: 0, e: "Narsa-buyum nomini bildiruvchi so'zlar — ot." },
-        { q: "Gapda ko'pincha kesim vazifasini bajaruvchi so'z turkumi qaysi?", a: ["Ot", "Sifat", "Fe'l", "Olmosh"], c: 2, e: "Fe'l harakat va holatni bildiradi, gapda kesim bo'lib keladi." },
-        { q: "\"Tez\" so'zining antonimi (zid ma'nolisi) qaysi?", a: ["Sekin", "Chaqqon", "Shoshilinch", "Ildam"], c: 0, e: "Tez — sekin: zid ma'noli so'zlar." },
-        { q: "Qaysi gap so'roq gap hisoblanadi?", a: ["Bahor keldi.", "Siz qayerda o'qiysiz?", "Kitobni oching!", "Qanday go'zal manzara!"], c: 1, e: "So'roq gap oxirida so'roq belgisi qo'yiladi." },
-        { q: "\"Kitoblar\" so'zidagi -lar qo'shimchasi nimani bildiradi?", a: ["Ko'plik", "Egalik", "Kelishik", "Zamon"], c: 0, e: "-lar ko'plik qo'shimchasidir." }
+        { q: "O'zbek alifbosida nechta unli harf bor?", a: ["4", "5", "6", "7"], c: 2, e: "Unlilar: a, o, i, e, u, o' — jami 6 ta." },
+        { q: "Darak gap oxiriga qaysi tinish belgisi qo'yiladi?", a: ["Nuqta", "So'roq belgisi", "Undov belgisi", "Vergul"], c: 0, e: "Darak gap oxiriga nuqta (.) qo'yiladi." },
+        { q: "\"Kitob\" so'zi nechta bo'g'indan iborat?", a: ["1", "2", "3", "4"], c: 1, e: "Ki-tob — 2 bo'g'in." },
+        { q: "Odamlarning ismlari qanday harf bilan yoziladi?", a: ["Kichik harf", "Bosh harf", "Ixtiyoriy", "Faqat katta harflar"], c: 1, e: "Ismlar bosh (katta) harf bilan boshlanadi: Aziz, Malika." },
+        { q: "\"Katta\" so'zining zid ma'nolisi (antonimi) qaysi?", a: ["Baland", "Kichik", "Uzun", "Keng"], c: 1, e: "Katta — kichik." },
+        { q: "Qaysi so'z to'g'ri yozilgan?", a: ["Maktap", "Maktab", "Mektab", "Maktob"], c: 1, e: "To'g'ri imlo: maktab." }
       ]
     },
     {
       id: "matematika",
       name: "Matematika",
-      short: "Algebra, geometriya va mantiq",
+      short: "2–9-sinf o'quvchilari uchun",
       anim: "infinity",
       color: "#a26bff",
-      desc: "Maktab kursidan olimpiada darajasigacha: algebra, geometriya, mantiqiy masalalar va DTM testlariga tayyorlov.",
-      tags: ["Algebra", "Geometriya", "Mantiq", "DTM"],
+      desc: "Sanash, amallar, jadval va sodda geometriya. Maktab dasturi bo'yicha qadam-baqadam o'rganish.",
+      tags: ["2–9-sinf", "Arifmetika", "Geometriya", "Mantiq"],
       quiz: [
-        { q: "200 ning 15% i nechaga teng?", a: ["25", "30", "35", "40"], c: 1, e: "200 × 0,15 = 30." },
-        { q: "x + 7 = 15 bo'lsa, x = ?", a: ["6", "7", "8", "9"], c: 2, e: "x = 15 − 7 = 8." },
-        { q: "Uchburchak ichki burchaklarining yig'indisi qancha?", a: ["90°", "180°", "270°", "360°"], c: 1, e: "Har qanday uchburchakda burchaklar yig'indisi 180°." },
-        { q: "2⁵ (ikkining beshinchi darajasi) nechaga teng?", a: ["10", "16", "32", "64"], c: 2, e: "2·2·2·2·2 = 32." },
-        { q: "√144 nechaga teng?", a: ["10", "11", "12", "14"], c: 2, e: "12 × 12 = 144." },
-        { q: "Doira yuzi qaysi formula bilan topiladi?", a: ["2πr", "πr²", "πd", "r²"], c: 1, e: "S = πr², bu yerda r — radius." }
+        { q: "7 + 8 = ?", a: ["14", "15", "16", "17"], c: 1, e: "7 + 8 = 15." },
+        { q: "9 × 6 = ?", a: ["45", "52", "54", "56"], c: 2, e: "9 × 6 = 54." },
+        { q: "100 − 37 = ?", a: ["63", "67", "73", "77"], c: 0, e: "100 − 37 = 63." },
+        { q: "Kvadratning nechta tomoni bor?", a: ["3", "4", "5", "6"], c: 1, e: "Kvadratning 4 ta teng tomoni bor." },
+        { q: "Yarim soat necha daqiqa?", a: ["15", "30", "45", "60"], c: 1, e: "1 soat = 60 daqiqa, yarmi = 30 daqiqa." },
+        { q: "1 kilogramm necha gramm?", a: ["10", "100", "1000", "10000"], c: 2, e: "1 kg = 1000 g." }
       ]
     },
     {
       id: "kimyo",
       name: "Kimyo",
-      short: "Moddalar, reaksiyalar va laboratoriya",
+      short: "2–9-sinf o'quvchilari uchun",
       anim: "bubbles",
       color: "#3ee0c8",
-      desc: "Noorganik va organik kimyo asoslari, kimyoviy reaksiyalar, masalalar yechish va tibbiyot yo'nalishiga tayyorlov.",
-      tags: ["Noorganik", "Organik", "Masalalar", "Tibbiyotga tayyorlov"],
+      desc: "Atrofimizdagi moddalar, suv, havo va oddiy tajribalar. Kimyoni qiziqarli misollar bilan o'rganamiz.",
+      tags: ["2–9-sinf", "Moddalar", "Tajribalar", "Tabiat"],
       quiz: [
-        { q: "Suvning kimyoviy formulasi qaysi?", a: ["H₂O", "CO₂", "O₂", "H₂O₂"], c: 0, e: "Suv — ikki vodorod va bir kislorod atomi: H₂O." },
-        { q: "Kislorod (O) elementining atom raqami nechaga teng?", a: ["6", "7", "8", "16"], c: 2, e: "Kislorod davriy jadvalda 8-o'rinda." },
-        { q: "NaCl kundalik hayotda nima deb ataladi?", a: ["Soda", "Osh tuzi", "Shakar", "Sirka"], c: 1, e: "Natriy xlorid — oddiy osh tuzi." },
-        { q: "Neytral muhitning pH qiymati qancha?", a: ["0", "7", "14", "1"], c: 1, e: "pH = 7 neytral, <7 kislotali, >7 ishqoriy." },
-        { q: "Fe belgisi qaysi elementni bildiradi?", a: ["Ftor", "Fosfor", "Temir", "Fransiy"], c: 2, e: "Fe (lotincha ferrum) — temir." },
-        { q: "Kimyoviy elementlar davriy jadvalini kim tuzgan?", a: ["M. Lomonosov", "D. Mendeleyev", "A. Lavuazye", "J. Dalton"], c: 1, e: "Davriy qonunni 1869-yilda D. I. Mendeleyev kashf etgan." }
+        { q: "Suv qaynaganda nimaga aylanadi?", a: ["Muzga", "Bug'ga", "Tuzga", "Yog'ga"], c: 1, e: "Suv qizdirilsa bug'ga (gaz holatiga) aylanadi." },
+        { q: "Muz — bu nima?", a: ["Qattiq holatdagi suv", "Shakar", "Tuz", "Havo"], c: 0, e: "Muz — muzlagan (qattiq) suv." },
+        { q: "Nafas olishimiz uchun havodagi qaysi gaz kerak?", a: ["Vodorod", "Kislorod", "Azot", "Karbonat angidrid"], c: 1, e: "Odam nafas olganda kislorod (O₂) yutadi." },
+        { q: "Shakarni suvga solsak nima bo'ladi?", a: ["Eriydi", "Yonadi", "Muzlaydi", "O'zgarmaydi"], c: 0, e: "Shakar suvda eriydi — shirin eritma hosil bo'ladi." },
+        { q: "Suvning kimyoviy formulasi qaysi?", a: ["H₂O", "CO₂", "O₂", "NaCl"], c: 0, e: "Suv — 2 vodorod va 1 kislorod atomi: H₂O." },
+        { q: "Temir buyum nam havoda tursa nima bo'ladi?", a: ["Zanglaydi", "Eriydi", "Yonadi", "Oqaradi"], c: 0, e: "Temir kislorod va namlik ta'sirida zanglaydi." }
       ]
     },
     {
       id: "ingliz-tili",
       name: "Ingliz tili",
-      short: "Beginner'dan Advanced'gacha",
+      short: "2–9-sinf o'quvchilari uchun",
       anim: "globe",
       color: "#4da3ff",
-      desc: "Grammatika, so'z boyligi, speaking klublar va real muloqot. Barcha darajalar uchun guruh va individual darslar.",
-      tags: ["Grammar", "Speaking", "Vocabulary", "Kids & Adults"],
+      desc: "Alifbo, so'zlar, sodda gaplar va o'yinlar orqali ingliz tilini o'rganish. Bolalar va o'smirlar uchun guruhlar.",
+      tags: ["2–9-sinf", "So'z boyligi", "Speaking", "O'yinlar"],
       quiz: [
-        { q: "She ___ to school every day.", a: ["go", "goes", "going", "gone"], c: 1, e: "Present Simple, 3-shaxs birlik: goes." },
-        { q: "What is the past form of \"go\"?", a: ["goed", "gone", "went", "going"], c: 2, e: "go → went → gone." },
-        { q: "Choose the correct article: ___ apple.", a: ["a", "an", "the", "—"], c: 1, e: "Unli tovush bilan boshlangan so'z oldidan \"an\" qo'yiladi." },
-        { q: "What is the plural of \"child\"?", a: ["childs", "childes", "children", "childrens"], c: 2, e: "child — children (istisno ko'plik)." },
-        { q: "Which word is a synonym of \"big\"?", a: ["small", "tiny", "large", "narrow"], c: 2, e: "big = large." },
-        { q: "How ___ water do you drink every day?", a: ["many", "much", "few", "little"], c: 1, e: "Water sanalmaydigan ot, shuning uchun \"much\"." }
+        { q: "\"Apple\" so'zi o'zbekcha nima?", a: ["Nok", "Olma", "Uzum", "Banan"], c: 1, e: "Apple — olma." },
+        { q: "\"Hello\" so'zining tarjimasi?", a: ["Xayr", "Rahmat", "Salom", "Iltimos"], c: 2, e: "Hello — salom." },
+        { q: "One, two, ___ . Keyingi son qaysi?", a: ["five", "three", "four", "ten"], c: 1, e: "One (1), two (2), three (3)." },
+        { q: "What color is the sky? (Osmon qanday rangda?)", a: ["Red", "Green", "Blue", "Black"], c: 2, e: "Osmon — blue (ko'k)." },
+        { q: "\"Cat\" so'zining ko'pligi qaysi?", a: ["cat", "cats", "cates", "caties"], c: 1, e: "Ko'plik uchun -s qo'shiladi: cats." },
+        { q: "I ___ a student.", a: ["is", "are", "am", "be"], c: 2, e: "\"I\" bilan doim \"am\" ishlatiladi: I am." }
       ]
     },
     {
       id: "ielts",
       name: "IELTS",
-      short: "Band 7+ uchun maqsadli tayyorlov",
+      short: "Boshlang'ich (beginner) daraja",
       anim: "gradcap",
       color: "#ffc857",
-      desc: "Listening, Reading, Writing va Speaking bo'limlari bo'yicha strategiyalar, mock imtihonlar va individual fikr-mulohaza.",
-      tags: ["Listening", "Reading", "Writing", "Speaking", "Mock test"],
+      desc: "IELTS bilan endi tanishayotganlar uchun: imtihon nima, qanday bo'limlari bor va tayyorgarlikni qayerdan boshlash kerak.",
+      tags: ["Beginner", "Imtihon tuzilishi", "Listening", "Speaking"],
       quiz: [
-        { q: "IELTS imtihoni nechta bo'limdan iborat?", a: ["2", "3", "4", "5"], c: 2, e: "Listening, Reading, Writing va Speaking — 4 bo'lim." },
-        { q: "IELTS natijasi qaysi shkala bo'yicha baholanadi?", a: ["0–9", "1–10", "1–100", "A–F"], c: 0, e: "IELTS band 0 dan 9 gacha." },
-        { q: "Listening bo'limida jami nechta savol bor?", a: ["20", "30", "40", "50"], c: 2, e: "Listening — 4 qism, 40 savol." },
-        { q: "Writing Task 1 uchun minimal so'zlar soni?", a: ["100", "150", "200", "250"], c: 1, e: "Task 1 — kamida 150 so'z, Task 2 — kamida 250 so'z." },
-        { q: "Speaking bo'limi taxminan qancha davom etadi?", a: ["5–7 daqiqa", "11–14 daqiqa", "20–25 daqiqa", "30 daqiqa"], c: 1, e: "Speaking 3 qismdan iborat, 11–14 daqiqa." },
-        { q: "IELTS ning ikki turi: Academic va ___", a: ["Business", "General Training", "Professional", "Junior"], c: 1, e: "Academic — o'qish uchun, General Training — ish va migratsiya uchun." }
+        { q: "IELTS — bu qanday imtihon?", a: ["Matematika imtihoni", "Ingliz tili darajasini aniqlovchi imtihon", "Haydovchilik imtihoni", "Tarix imtihoni"], c: 1, e: "IELTS ingliz tilini qanchalik bilishingizni baholaydi." },
+        { q: "IELTS imtihoni nechta bo'limdan iborat?", a: ["2", "3", "4", "5"], c: 2, e: "Listening, Reading, Writing, Speaking — 4 bo'lim." },
+        { q: "\"Listening\" bo'limida nima qilinadi?", a: ["Insho yoziladi", "Audio eshitib savollarga javob beriladi", "Matn o'qiladi", "Suhbatlashiladi"], c: 1, e: "Listening — eshitib tushunish bo'limi." },
+        { q: "\"Speaking\" bo'limida nima qilinadi?", a: ["Imtihon oluvchi bilan suhbatlashiladi", "Test belgilanadi", "Xat yoziladi", "Audio eshitiladi"], c: 0, e: "Speaking — imtihon oluvchi bilan ingliz tilida suhbat." },
+        { q: "IELTS da eng yuqori ball qancha?", a: ["5", "9", "10", "100"], c: 1, e: "IELTS 0 dan 9 gacha ball bilan baholanadi." },
+        { q: "IELTS sertifikati qancha muddat amal qiladi?", a: ["6 oy", "1 yil", "2 yil", "Umrbod"], c: 2, e: "IELTS natijasi 2 yil davomida amal qiladi." }
       ]
     },
     {
       id: "suniy-intellekt",
       name: "Sun'iy intellekt",
-      short: "AI asoslari, Python va neyron tarmoqlar",
+      short: "Boshlang'ich (beginner) daraja",
       anim: "robot",
       color: "#7df0ff",
-      desc: "Machine Learning va neyron tarmoqlar asoslari, Python bilan amaliy loyihalar, zamonaviy AI vositalaridan samarali foydalanish.",
-      tags: ["Python", "Machine Learning", "Neyron tarmoqlar", "AI vositalar"],
+      desc: "Sun'iy intellekt nima, u qayerda ishlatiladi va undan kundalik hayotda qanday foydalanish mumkin. Noldan boshlovchilar uchun.",
+      tags: ["Beginner", "AI nima?", "ChatGPT", "Amaliyot"],
       quiz: [
-        { q: "\"Machine Learning\" (mashinali o'rganish) nima?", a: ["Kompyuter yig'ish texnologiyasi", "Ma'lumotlardan o'rganadigan algoritmlar", "Veb-sayt dizayni", "Internet tarmog'i turi"], c: 1, e: "ML — kompyuter ma'lumotlardan qonuniyat o'rganadigan yo'nalish." },
-        { q: "ChatGPT qanday turdagi model?", a: ["Rasm tahrirlovchi", "Ma'lumotlar bazasi", "Katta til modeli (LLM)", "Operatsion tizim"], c: 2, e: "ChatGPT — Large Language Model (katta til modeli)." },
-        { q: "Sun'iy intellekt sohasida eng ko'p ishlatiladigan dasturlash tili?", a: ["HTML", "Python", "CSS", "Excel"], c: 1, e: "Python — AI/ML uchun standart til." },
-        { q: "Neyron tarmoqlar nimadan ilhomlanib yaratilgan?", a: ["Kompyuter protsessori", "Inson miyasi", "Quyosh tizimi", "Kimyoviy reaksiyalar"], c: 1, e: "Sun'iy neyronlar biologik neyronlarga o'xshatib tuzilgan." },
-        { q: "Model o'quv ma'lumotlarini \"yodlab olib\", yangi ma'lumotlarda xato ishlashi nima deyiladi?", a: ["Underfitting", "Overfitting", "Clustering", "Regression"], c: 1, e: "Overfitting — modelning haddan ortiq moslashuvi." },
-        { q: "Tyuring testi nimani tekshiradi?", a: ["Kompyuter tezligini", "Xotira hajmini", "Mashinaning insondek muloqot qila olishini", "Internet tezligini"], c: 2, e: "Alan Tyuring taklif qilgan test mashina \"aql\"ini baholaydi." }
+        { q: "Sun'iy intellekt (AI) nima?", a: ["Kompyuter o'yini", "Kompyuterning inson kabi o'ylab, vazifa bajarishi", "Yangi telefon turi", "Internet tezligi"], c: 1, e: "AI — mashinalarning inson kabi \"fikrlab\" vazifa bajarishi." },
+        { q: "Quyidagilardan qaysi biri sun'iy intellekt yordamchisi?", a: ["ChatGPT", "Kalkulyator", "Soat", "Chiroq"], c: 0, e: "ChatGPT — savollarga javob beradigan AI yordamchisi." },
+        { q: "Telefondagi ovozli yordamchi (Siri, Google Assistant) nima?", a: ["Musiqa pleyeri", "Sun'iy intellekt misoli", "Kamera", "Batareya"], c: 1, e: "Ovozli yordamchilar sun'iy intellekt asosida ishlaydi." },
+        { q: "Sun'iy intellekt nimadan \"o'rganadi\"?", a: ["Uxlashdan", "Ko'p ma'lumotlardan", "Elektrdan", "Ovqatdan"], c: 1, e: "AI ko'p misollar (ma'lumotlar) asosida o'rganadi." },
+        { q: "Telefon yuzingizni tanib ochilishi (Face ID) qaysi texnologiya?", a: ["Sun'iy intellekt", "Bluetooth", "Wi-Fi", "GPS"], c: 0, e: "Yuzni tanish — sun'iy intellektning kundalik misoli." },
+        { q: "Sun'iy intellektni o'rganishda eng ko'p ishlatiladigan dasturlash tili?", a: ["Python", "Word", "Excel", "Paint"], c: 0, e: "Python — AI uchun eng mashhur til, boshlovchilarga oson." }
       ]
     },
     {
       id: "data-analitika",
       name: "Data analitika",
-      short: "Excel, SQL, Power BI va statistika",
+      short: "Boshlang'ich (beginner) daraja",
       anim: "barchart",
       color: "#5ee38a",
-      desc: "Ma'lumotlarni yig'ish, tozalash, tahlil qilish va vizualizatsiya. Excel, SQL, Power BI va Python bilan amaliy loyihalar.",
-      tags: ["Excel", "SQL", "Power BI", "Statistika", "Python"],
+      desc: "Ma'lumotlar nima, ularni qanday yig'ish, jadvalga solish va oddiy diagrammalar chizish. Excel'dan boshlaymiz.",
+      tags: ["Beginner", "Excel", "Jadval", "Diagramma"],
       quiz: [
-        { q: "2, 4, 6, 8 sonlarining o'rta arifmetigi nechaga teng?", a: ["4", "5", "6", "20"], c: 1, e: "(2+4+6+8) / 4 = 5." },
-        { q: "Ma'lumotlar bazasidan ma'lumot olish uchun qaysi til ishlatiladi?", a: ["HTML", "SQL", "CSS", "PHP"], c: 1, e: "SQL — Structured Query Language." },
-        { q: "Vaqt bo'yicha o'zgarishni ko'rsatish uchun eng mos diagramma qaysi?", a: ["Doira (pie)", "Chiziqli (line)", "Tarqoq (scatter)", "Jadval"], c: 1, e: "Chiziqli diagramma trendni eng yaxshi ko'rsatadi." },
-        { q: "3, 7, 9, 12, 15 sonlarining medianasi nechaga teng?", a: ["7", "9", "12", "9,2"], c: 1, e: "Saralangan qatorning o'rtasidagi son — 9." },
-        { q: "Dashboard (boshqaruv paneli) yaratish uchun mashhur vosita qaysi?", a: ["Word", "Power BI", "Paint", "Notepad"], c: 1, e: "Power BI, Tableau, Looker — vizualizatsiya vositalari." },
-        { q: "\"Data cleaning\" (ma'lumotlarni tozalash) nimani anglatadi?", a: ["Faylni o'chirish", "Xato va takroriy yozuvlarni bartaraf etish", "Rangli jadval yasash", "Ma'lumotni chop etish"], c: 1, e: "Tahlildan oldin ma'lumot sifatini ta'minlash bosqichi." }
+        { q: "\"Data\" (ma'lumot) nima?", a: ["Faqat rasm", "Raqamlar, matnlar va faktlar to'plami", "Kompyuter turi", "O'yin"], c: 1, e: "Data — raqam, matn, sana kabi har qanday ma'lumot." },
+        { q: "Jadval bilan ishlash uchun eng mashhur dastur qaysi?", a: ["Paint", "Excel", "Telegram", "YouTube"], c: 1, e: "Excel — jadval va hisob-kitoblar uchun asosiy dastur." },
+        { q: "3, 5, 7 sonlarining o'rtachasi nechaga teng?", a: ["4", "5", "6", "15"], c: 1, e: "(3 + 5 + 7) / 3 = 5." },
+        { q: "Diagramma (grafik) nima uchun kerak?", a: ["Ma'lumotni rasm ko'rinishida tushunarli ko'rsatish uchun", "Musiqa eshitish uchun", "Xat yozish uchun", "O'yin o'ynash uchun"], c: 0, e: "Diagramma raqamlarni ko'z bilan tez tushunishga yordam beradi." },
+        { q: "12, 45, 7, 30 sonlaridan eng kattasi qaysi?", a: ["12", "45", "7", "30"], c: 1, e: "Eng katta son — 45." },
+        { q: "Data analitik nima qiladi?", a: ["Rasm chizadi", "Ma'lumotlarni tahlil qilib xulosa chiqaradi", "Uy quradi", "Mashina haydaydi"], c: 1, e: "Analitik ma'lumotlarni o'rganib, foydali xulosa va tavsiyalar beradi." }
       ]
     },
     {
       id: "huquq",
       name: "Huquq",
-      short: "Konstitutsiya, kodekslar va huquqiy savodxonlik",
+      short: "2–9-sinf o'quvchilari uchun",
       anim: "scales",
       color: "#ff6b9d",
-      desc: "Davlat va huquq asoslari, Konstitutsiya, fuqarolik va jinoyat huquqi. Yuridik oliygohlarga kirish testlariga tayyorlov.",
-      tags: ["Konstitutsiya", "Fuqarolik huquqi", "Jinoyat huquqi", "DTM"],
+      desc: "Davlat ramzlari, bolalar huquqlari, qoidalar va Konstitutsiya haqida sodda va qiziqarli bilimlar.",
+      tags: ["2–9-sinf", "Davlat ramzlari", "Bolalar huquqi", "Konstitutsiya"],
       quiz: [
-        { q: "O'zbekiston Respublikasi Konstitutsiyasi qachon qabul qilingan?", a: ["1-sentabr 1991", "8-dekabr 1992", "1-yanvar 1993", "30-aprel 2023"], c: 1, e: "Konstitutsiya 1992-yil 8-dekabrda qabul qilingan." },
-        { q: "O'zbekiston Respublikasi parlamenti qanday nomlanadi?", a: ["Vazirlar Mahkamasi", "Oliy Majlis", "Konstitutsiyaviy sud", "Xalq Kengashi"], c: 1, e: "Oliy Majlis — oliy davlat vakillik organi." },
-        { q: "Fuqaro qaysi yoshdan to'liq voyaga yetgan hisoblanadi?", a: ["16", "18", "21", "25"], c: 1, e: "18 yoshdan to'liq muomala layoqati yuzaga keladi." },
-        { q: "Jinoyat va jazolarni belgilovchi asosiy qonun hujjati qaysi?", a: ["Mehnat kodeksi", "Fuqarolik kodeksi", "Jinoyat kodeksi", "Oila kodeksi"], c: 2, e: "Jinoyat kodeksi qilmishning jinoyat ekanini va jazoni belgilaydi." },
-        { q: "Oliy Majlis nechta palatadan iborat?", a: ["1", "2", "3", "4"], c: 1, e: "Qonunchilik palatasi va Senat — ikki palata." },
-        { q: "Konstitutsiyaning yangi tahriri referendumda qaysi yilda qabul qilindi?", a: ["2017", "2021", "2023", "2024"], c: 2, e: "2023-yil 30-aprel referendumida yangi tahrir qabul qilindi." }
+        { q: "O'zbekiston Respublikasining davlat ramzlari nechta?", a: ["2", "3", "4", "5"], c: 1, e: "Bayroq, gerb va madhiya — 3 ta davlat ramzi." },
+        { q: "O'zbekiston bayrog'ida nechta yulduz bor?", a: ["7", "10", "12", "15"], c: 2, e: "Bayroqda 12 ta yulduz tasvirlangan." },
+        { q: "Konstitutsiya — bu nima?", a: ["Davlatning asosiy qonuni", "Kitob do'koni", "Sport o'yini", "Shahar nomi"], c: 0, e: "Konstitutsiya — barcha qonunlardan ustun turuvchi asosiy qonun." },
+        { q: "Har bir bola qaysi huquqqa ega?", a: ["Faqat ishlash", "Ta'lim olish (o'qish)", "Mashina haydash", "Ovoz berish"], c: 1, e: "Har bir bola bepul ta'lim olish huquqiga ega." },
+        { q: "Piyoda yo'lni qayerdan kesib o'tishi kerak?", a: ["Istalgan joydan", "Piyodalar o'tish joyidan, svetofor yashil bo'lganda", "Mashinalar orasidan", "Yugurib"], c: 1, e: "Yo'l qoidalari — hammamizning xavfsizligimiz uchun." },
+        { q: "O'zbekiston Mustaqillik kuni qachon nishonlanadi?", a: ["1-sentabr", "8-dekabr", "21-mart", "9-may"], c: 0, e: "1-sentabr — Mustaqillik kuni. 8-dekabr — Konstitutsiya kuni." }
       ]
     }
   ],
 
   levels: [
-    { min: 0, max: 2, title: "Boshlang'ich daraja", anim: "bronze", text: "Asoslarni mustahkamlash vaqti keldi! Bizning boshlang'ich guruhlarimiz aynan siz uchun." },
-    { min: 3, max: 4, title: "O'rta daraja", anim: "silver", text: "Yaxshi natija! Tizimli mashg'ulotlar bilan yuqori darajaga tez chiqasiz." },
-    { min: 5, max: 6, title: "Yuqori daraja", anim: "gold", text: "Ajoyib! Siz kuchli bazaga egasiz — professional darajaga birga chiqamiz." }
+    { min: 0, max: 2, title: "Boshlang'ich daraja", anim: "bronze", text: "Boshlanishi yaxshi! Bizning boshlang'ich guruhlarimizda asoslarni oson va qiziqarli o'rganasiz." },
+    { min: 3, max: 4, title: "O'rta daraja", anim: "silver", text: "Yaxshi natija! Muntazam mashg'ulotlar bilan tez orada yuqori darajaga chiqasiz." },
+    { min: 5, max: 6, title: "Yuqori daraja", anim: "gold", text: "Ajoyib! Siz yaxshi bazaga egasiz — keyingi bosqichga birga o'tamiz." }
   ]
 };
